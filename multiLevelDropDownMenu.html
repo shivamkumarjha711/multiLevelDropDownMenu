@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Level Drop Down Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            width: 80%;
+            height: 50px;
+            margin: 0px auto;
+            background-color: #1eae98;
+        }
+        .navbar ul {
+            list-style: none;
+        }
+        .navbar ul li {
+            float: left;
+            width: 217px;
+            font-size: 20px;
+            line-height: 50px;
+            text-align: center;
+            border: 0.5px solid white;
+            position: relative;
+        }
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+        .navbar ul li a:hover {
+            background-color: #067766bf;
+        }
+        .navbar ul ul {
+            background-color: #1eae98;
+            position: absolute;
+            display: none;
+        }
+        .navbar ul ul ul {
+            left: 100%;
+            top: 0px;
+        }
+        .navbar ul li:hover > ul {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Services &#8628;</a>
+        <ul>
+            <li><a href="">Washing</a></li>
+            <li><a href="">Clothimg</a></li>
+            <li><a href="">Car Wash &#8628;</a>
+                <ul>
+                    <li><a href="">Kia</a></li>
+                    <li><a href="">Hyundai &#8628;</a>
+                        <ul>
+                            <li><a href="">Seat Cover Wash</a></li>
+                            <li><a href="">Headlight Wash</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Tata</a>
+                    <li><a href="">Thar</a>
+                </ul>
+            </li>
+            <li><a href="">Kitchen Clean</a></li>
+            <li><a href="">Bathroom Clean</a></li>
+        </ul>
+        </li>
+        <li><a href="">Feedback </a>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </li>
+        <li><a href="">Contact Us</a></li>
+    </ul>
+</nav>
+</body>
+</html>
